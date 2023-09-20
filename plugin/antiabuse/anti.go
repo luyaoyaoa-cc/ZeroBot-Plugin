@@ -17,7 +17,7 @@ import (
 	"github.com/wdvxdr1123/ZeroBot/message"
 )
 
-const bandur time.Duration = time.Minute * 10
+const bandur time.Duration = time.Minute * 1
 
 var (
 	managers *ctrl.Manager[*zero.Ctx] // managers lazy load
