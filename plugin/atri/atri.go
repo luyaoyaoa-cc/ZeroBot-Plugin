@@ -84,7 +84,7 @@ func init() { // 插件主体
 		Handle(func(ctx *zero.Ctx) {
 			ctx.SendChain(dgtr.randImage("FN.jpg", "WQ.jpg", "WQ1.jpg"))
 		})
-	engine.OnFullMatchGroup([]string{"早安", "早！又是元气满满的一天呢~","早哇", "早上好", "ohayo", "哦哈哟", "お早う", "早好", "早哦", "早早早"}).SetBlock(true).
+	engine.OnFullMatchGroup([]string{"早安", "早！又是元气满满的一天呢~", "早哇", "早上好", "ohayo", "哦哈哟", "お早う", "早好", "早哦", "早早早"}).SetBlock(true).
 		Handle(func(ctx *zero.Ctx) {
 			now := time.Now().Hour()
 			switch {
@@ -228,7 +228,6 @@ func init() { // 插件主体
 				"是吧！谁叫我这么高性能呢！哼哼！",
 				"交给我吧，有高性能的我陪着呢",
 				"呣......我的高性能，毫无遗憾地施展出来了......",
-				
 			))
 		})
 	engine.OnKeywordGroup([]string{"没事", "没关系", "大丈夫", "还好", "不要紧", "没出大问题", "没伤到哪"}, zero.OnlyToMe).SetBlock(true).
